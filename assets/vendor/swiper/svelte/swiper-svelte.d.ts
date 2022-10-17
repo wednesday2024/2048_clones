@@ -53,9 +53,6 @@ declare class Swiper extends SvelteComponentTyped<
    * Event will be fired when swiper updates the hash
    */
   hashSet: CustomEvent<[swiper: SwiperClass]>;/**
-   * Event will be fired on key press
-   */
-  keyPress: CustomEvent<[swiper: SwiperClass, keyCode: string]>;/**
    * Event will be fired in the beginning of lazy loading of image
    */
   lazyImageLoad: CustomEvent<[swiper: SwiperClass, slideEl: HTMLElement, imageEl: HTMLElement]>;
@@ -63,9 +60,6 @@ declare class Swiper extends SvelteComponentTyped<
    * Event will be fired when lazy loading image will be loaded
    */
   lazyImageReady: CustomEvent<[swiper: SwiperClass, slideEl: HTMLElement, imageEl: HTMLElement]>;/**
-   * Event will be fired on mousewheel scroll
-   */
-  scroll: CustomEvent<[swiper: SwiperClass, event: WheelEvent]>;/**
    * Event will be fired on navigation hide
    */
   navigationHide: CustomEvent<[swiper: SwiperClass]>;
@@ -81,6 +75,12 @@ declare class Swiper extends SvelteComponentTyped<
    * Event will be fired on navigation next button click
    */
   navigationNext: CustomEvent<[swiper: SwiperClass]>;/**
+   * Event will be fired on key press
+   */
+  keyPress: CustomEvent<[swiper: SwiperClass, keyCode: string]>;/**
+   * Event will be fired on mousewheel scroll
+   */
+  scroll: CustomEvent<[swiper: SwiperClass, event: WheelEvent]>;/**
    * Event will be fired after pagination rendered
    */
   paginationRender: CustomEvent<[swiper: SwiperClass, paginationEl: HTMLElement]>;
