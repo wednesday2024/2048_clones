@@ -449,9 +449,6 @@ declare const Swiper: DefineComponent<
    * Event will be fired when slide changed with autoplay
    */
   autoplay: (swiper: SwiperClass) => void;/**
-   * Event will be fired on key press
-   */
-  keyPress: (swiper: SwiperClass, keyCode: string) => void;/**
    * Event will be fired on window hash change
    */
   hashChange: (swiper: SwiperClass) => void;
@@ -459,6 +456,9 @@ declare const Swiper: DefineComponent<
    * Event will be fired when swiper updates the hash
    */
   hashSet: (swiper: SwiperClass) => void;/**
+   * Event will be fired on key press
+   */
+  keyPress: (swiper: SwiperClass, keyCode: string) => void;/**
    * Event will be fired on mousewheel scroll
    */
   scroll: (swiper: SwiperClass, event: WheelEvent) => void;/**
@@ -495,6 +495,9 @@ declare const Swiper: DefineComponent<
    * Event will be fired on pagination show
    */
   paginationShow: (swiper: SwiperClass) => void;/**
+   * Event will be fired on zoom change
+   */
+  zoomChange: (swiper: SwiperClass, scale: number, imageEl: HTMLElement, slideEl: HTMLElement) => void;/**
    * Event will be fired on draggable scrollbar drag start
    */
   scrollbarDragStart: (swiper: SwiperClass, event: MouseEvent | TouchEvent | PointerEvent) => void;
@@ -507,10 +510,7 @@ declare const Swiper: DefineComponent<
   /**
    * Event will be fired on draggable scrollbar drag end
    */
-  scrollbarDragEnd: (swiper: SwiperClass, event: MouseEvent | TouchEvent | PointerEvent) => void;/**
-   * Event will be fired on zoom change
-   */
-  zoomChange: (swiper: SwiperClass, scale: number, imageEl: HTMLElement, slideEl: HTMLElement) => void;
+  scrollbarDragEnd: (swiper: SwiperClass, event: MouseEvent | TouchEvent | PointerEvent) => void;
     
   /**
    * Fired right after Swiper initialization.
