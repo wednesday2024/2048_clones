@@ -4,10 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <script src="assets/vendor/jquery/jquery.js"></script>
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
+  <meta name="viewport" id="metaViewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
   <meta name="author" content="Ryzen5-3600">
   <style type="text/css">
 	 body {
@@ -135,8 +136,8 @@ body::-webkit-scrollbar-thumb {
 	<!-- Vendor CSS Files -->
     <link href="assets/vendor/swiper/swiper-bundle.css" rel="stylesheet">
 	<!-- Website services description. -->
-	<meta content="Ryzen5-3600's services are free and Ryzen5-3600 don't expect any money in return for Ryzen5-3600's services and Ryzen5-3600's free services are open source." name="description">
-    <meta content="Ryzen5-3600's services are free and Ryzen5-3600 don't expect any money in return for Ryzen5-3600's services and Ryzen5-3600's free services are open source." name="keywords">
+	<meta content="Ryzen5-3600's services and projects are always open source." name="description">
+    <meta content="Ryzen5-3600's services and projects are always open source." name="keywords">
 	<!-- Website styling. -->
 	<link rel="stylesheet" href="2048_game_files/style/normalize.css">
 	<link rel="stylesheet" href="2048_game_files/style/main.css">
@@ -149,6 +150,10 @@ body::-webkit-scrollbar-thumb {
 					 0px 12px 1px rgba(0,0,0,0.1),
 					 0px 17px 17px rgba(0,0,0,1);>
 	<body oncontextmenu="return false">
+	<script>
+    if(navigator.userAgent.toLowerCase().indexOf('android') > -1)
+    document.getElementById('metaViewport').setAttribute('content', 'width='+screen.width+', initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+  </script>
     </head>
 	<!-- Extra website styling. -->
 	<body style="color: black;
@@ -254,16 +259,16 @@ body::-webkit-scrollbar-thumb {
 					   class="shadowfilter">
       </div>
     <!-- Game scripts. -->
-      <script src="8192_game_files/js/bind_polyfill.js"></script>
-      <script src="8192_game_files/js/classlist_polyfill.js"></script>
-      <script src="8192_game_files/js/animframe_polyfill.js"></script>
-      <script src="8192_game_files/js/keyboard_input_manager.js"></script>
-      <script src="8192_game_files/js/html_actuator.js"></script>
-      <script src="8192_game_files/js/grid.js"></script>
-      <script src="8192_game_files/js/tile.js"></script>
-      <script src="8192_game_files/js/local_storage_manager.js"></script>
-      <script src="8192_game_files/js/game_manager.js"></script>
-      <script src="8192_game_files/js/application.js"></script>
+      <script src="4096_game_files/js/bind_polyfill.js"></script>
+      <script src="4096_game_files/js/classlist_polyfill.js"></script>
+      <script src="4096_game_files/js/animframe_polyfill.js"></script>
+      <script src="4096_game_files/js/keyboard_input_manager.js"></script>
+      <script src="4096_game_files/js/html_actuator.js"></script>
+      <script src="4096_game_files/js/grid.js"></script>
+      <script src="4096_game_files/js/tile.js"></script>
+      <script src="4096_game_files/js/local_storage_manager.js"></script>
+      <script src="4096_game_files/js/game_manager.js"></script>
+      <script src="4096_game_files/js/application.js"></script>
 	  <!-- Vendor JS Files -->
   <script src="assets/vendor/swiper/swiper-bundle.js"></script>
 
