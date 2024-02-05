@@ -807,3 +807,129 @@ hr {
       animation: pop-in-small 700ms ease 2s both;
       margin-top: 10px;
       height: 40px; } }
+	  
+.transparent {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.37);
+}
+
+	 body {
+	    font-family: Gloria Hallelujah;
+	    }
+	  cite {
+	    font-family: Gloria Hallelujah;
+	    }
+	body{
+    text-align: center;
+}
+
+}
+	h1 {
+}
+	div {
+}
+.-sticky {
+  position: -webkit-sticky; // safari
+  position: sticky;
+  top: 12px; // will stick at this point
+}
+
+nav {
+  width: 180px;
+  allign: center 100px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 21px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+  padding: 0 32px;
+  box-sizing: border-box;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  .nav-item {
+    color: #505050;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.590em;
+    line-height: 42px;
+    font-weight: 1000;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      color: #44BF75;
+    }
+  }
+}
+
+.content {
+  margin-top: 0px;
+}
+
+strong {
+  color: #559FAC;
+}
+
+created {
+  color: #A4A4A4;
+}
+
+instructions {
+  color: #0489B1;
+}
+
+html, body {
+  height: auto;
+}
+.clip-text {
+  background: url(https://cdn-r5-3600.github.io/remote-content/2419f29c45db4eb46245c8b89cf34dce35f6db8fb40a3631fd5424cb727b1ce3/assets/images/2048-Clones/rgb.gif);
+  background-size: cover;
+  background-position: center;
+  
+  -webkit-background-clip: text;
+  color: transparent; // set to transparent, otherwise won't see the background
+  
+  width: 300px;
+  height: 100px;
+  box-sizing: border-box;
+  font-size: 58px;
+  font-weight: bold;
+  text-align: right;
+  line-height: 155px;
+  flex-shrink: 0;
+}
+@keyframes animation {
+  from {
+    letter-spacing: 20px;
+  }
+  to {
+    letter-spacing: 0;
+  }
+}
+
+.animated {
+  animation: animation 4s ease;
+}
+
+h2 {
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+*{
+  margin:0;
+  padding:0;
+}
+body::-webkit-scrollbar {
+  width: 12px; }
+
+body::-webkit-scrollbar-track {
+  background: #faf8ef;
+  border-radius: 6px; }
+
+body::-webkit-scrollbar-thumb {
+  background: #bbada0;
+  border-radius: 6px; }
+}
